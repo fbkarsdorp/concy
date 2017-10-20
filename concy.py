@@ -63,7 +63,7 @@ def print_to_screen(df):
     help='Match case insensitively unless PATTERN contains uppercase characters')
 @click.option('--sort/--no-sort', default=False, help='Sort results by match and context.')
 @click.option('--outfile', type=click.File(mode='w'), 
-    help='Path to file for saving results. (Only required when OUTPUT is not SCREEN.)')
+    help='Path to file for saving results. Use .csv for CSV output and .xslx for Excel output.')
 def concordance(pattern, path, window, case, sort, outfile):
     ag_search = ag(pattern, path, ignore_case=case)
     df = to_dataframe(iter_ag_output(ag_search, window=window))

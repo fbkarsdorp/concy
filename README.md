@@ -19,4 +19,4 @@ concy '\w+ing of\b' corpus-directory
 - `--window`: Size of left and right context to match in number of  characters.  [default: 50]
 - `--case / --no-case`:  Employs Silver Searcher's 'smart case', i.e. matches case insensitively unless PATTERN contains  uppercase characters.
 - `--sort / --no-sort`: Sort results by match and context.
-- `--outfile`: Path to file for saving results. (Only required when OUTPUT is not SCREEN.
+- `--outfile`: Path to file for saving results. Use .csv for CSV output and .xslx for Excel output.
